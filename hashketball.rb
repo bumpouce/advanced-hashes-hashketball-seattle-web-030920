@@ -81,7 +81,7 @@ def most_points_scored ()
   return_key = "player_name"
   player = ""
   
-  player = find_biggest ("points", "player_name")
+  player = find_biggest ("", "")
 end
 
 def winning_team ()
