@@ -73,7 +73,7 @@ def big_shoe_rebounds ()
   return_key = "rebounds"
   return_stat = 0
   
-  return_stat = find_biggest ("shoe", "rebounds")
+  return_stat = find_biggest ()
   
 end
 
@@ -119,7 +119,7 @@ def find_team_data(input)
   pp "Did not find team."
 end
 
-def find_biggest (find_key, return_key)
+def find_biggest ()
   return_stat = 0
   compared = 0
   teams = []
@@ -130,9 +130,9 @@ def find_biggest (find_key, return_key)
 
   teams.collect do |team|
     team[:players].collect do |player|
-      if player[find_key] > compared
-        compared = player[find_key]
-        return_stat = player[return_key]
+      if player[:shoe] > compared
+        compared = player[:shoe]
+        return_stat = player[:rebounds]
       end
     end
   end
