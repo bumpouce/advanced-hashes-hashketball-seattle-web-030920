@@ -89,8 +89,8 @@ def big_shoe_rebounds ()
       pp "Player: #{player[:player_name]}"
       if player[:shoe] > compared
         pp "Found a bigger shoe!"
-#        compared = player[find_key]
-#        return_stat = player[return_key]
+        compared = player[:shoe]
+        return_stat = player[:rebounds]
       end
     end
   end
