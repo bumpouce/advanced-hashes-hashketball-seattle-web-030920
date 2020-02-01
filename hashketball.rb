@@ -70,7 +70,25 @@ end
 
 def big_shoe_rebounds ()
   rebounds = 0 
-  pp find_biggest ("", "")
+
+#  return_stat = 0
+#  compared = 0
+#  teams = []
+  
+#  names = team_names 
+#  teams << find_team_data(names[0])
+#  teams << find_team_data(names[1])
+  
+#  teams.collect do |team|
+#    team[:players].collect do |player|
+#      if player[find_key] > compared
+#        compared = player[find_key]
+#        return_stat = player[return_key]
+#      end
+#    end
+#  end
+  
+#  return_stat
 end
 
 def most_points_scored ()
