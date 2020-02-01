@@ -70,7 +70,7 @@ end
 
 def big_shoe_rebounds ()
   rebounds = 0 
-  pp find_biggest ("shoe", "rebounds")
+  pp find_biggest ("", "")
 end
 
 def most_points_scored ()
