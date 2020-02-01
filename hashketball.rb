@@ -106,7 +106,9 @@ end
 def player_with_longest_name ()
   name_length = 0
   
-  teams = team_names().flatten!
+  teams = team_names
+  teams.flatten!
+  
   pp teams
   
 #  player_names(home).collect do |player|
