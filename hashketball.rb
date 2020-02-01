@@ -71,26 +71,10 @@ end
 def big_shoe_rebounds ()
   find_key = :shoe
   return_key = :rebounds
-  
   return_stat = 0
-  compared = 0
-  teams = []
   
-  names = team_names 
-  teams << find_team_data(names[0])
-  teams << find_team_data(names[1])
-
-  teams.collect do |team|
-    team[:players].collect do |player|
-      if player[find_key] > compared
-        pp "Found a bigger shoe!"
-        compared = player[find_key]
-        return_stat = player[return_key]
-      end
-    end
-  end
+  return_stat = find_biggest (find_key, return_key)
   
-  return_stat
 end
 
 def most_points_scored ()
@@ -136,22 +120,22 @@ def find_team_data(input)
 end
 
 def find_biggest (find_key, return_key)
-#  return_stat = 0
-#  compared = 0
-#  teams = []
+  return_stat = 0
+  compared = 0
+  teams = []
   
-#  names = team_names 
-#  teams << find_team_data(names[0])
-#  teams << find_team_data(names[1])
+  names = team_names 
+  teams << find_team_data(names[0])
+  teams << find_team_data(names[1])
+
+  teams.collect do |team|
+    team[:players].collect do |player|
+      if player[find_key] > compared
+        compared = player[find_key]
+        return_stat = player[return_key]
+      end
+    end
+  end
   
-#  teams.collect do |team|
-#    team[:players].collect do |player|
-#      if player[find_key] > compared
-#        compared = player[find_key]
-#        return_stat = player[return_key]
-#      end
-#    end
-#  end
-  
-#  return_stat
+  return_stat
 end
