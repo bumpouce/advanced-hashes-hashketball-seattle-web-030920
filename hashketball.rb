@@ -92,11 +92,11 @@ def winning_team ()
   home = teams[0]
   away = teams[1]
   
-  player_names(teams[0]).collect do |player|
+  player_names(home).collect do |player|
     home_score += num_points_scored (player)
   end
   
-  player_names(teams[1]).collect do |player|
+  player_names(away).collect do |player|
     away_score += num_points_scored (player)
   end
   
