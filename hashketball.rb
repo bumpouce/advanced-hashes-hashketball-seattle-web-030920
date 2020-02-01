@@ -71,16 +71,8 @@ end
 def big_shoe_rebounds ()
   rebounds = 0 
 
-  teams = team_names  
-  home = find_teams_biggest_shoe (teams[0])
-  away = find_teams_biggest_shoe (teams[1])
- 
-  if home[0] > away[0]
-    rebounds = home[1]
-  else 
-    rebounds = away[1]
-  end
-  
+
+
   rebounds
 end
 
@@ -126,9 +118,9 @@ def find_team_data(input)
   pp "Did not find team."
 end
 
-def find_teams_biggest_shoe (input)
-  rebounds = 0
-  biggest_shoe = 0
+def find_biggest ()
+  biggest_stat = 0
+   = 0
   team = find_team_data(input)
   
   team[:players].collect do |player|
@@ -138,5 +130,5 @@ def find_teams_biggest_shoe (input)
     end
   end
   
-  [biggest_shoe, rebounds]
+  biggest_stat
 end
