@@ -73,7 +73,7 @@ def big_shoe_rebounds ()
   return_key = "rebounds"
   return_stat = 0
   
-  return_stat = find_biggest
+  return_stat = find_biggest(find_key, return_key)
   
 end
 
@@ -119,7 +119,7 @@ def find_team_data(input)
   pp "Did not find team."
 end
 
-def find_biggest ()
+def find_biggest (find_key, return_key)
   return_stat = 0
   compared = 0
   teams = []
