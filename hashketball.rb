@@ -69,7 +69,7 @@ def player_stats (player)
 end
 
 def big_shoe_rebounds ()
-#  rebounds = 0 
+  rebounds = 0 
 #  rebounds = find_biggest ("shoe", "rebounds")
 end
 
