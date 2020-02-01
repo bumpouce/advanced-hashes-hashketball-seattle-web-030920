@@ -69,8 +69,6 @@ def player_stats (player)
 end
 
 def big_shoe_rebounds ()
-  rebounds = 0 
-
   return_stat = 0
   compared = 0
   teams = []
@@ -95,7 +93,7 @@ def big_shoe_rebounds ()
     end
   end
   
-#  return_stat
+  return_stat
 end
 
 def most_points_scored ()
