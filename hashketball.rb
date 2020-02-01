@@ -119,6 +119,13 @@ def player_with_longest_name ()
 end
 
 def long_name_steals_a_ton? ()
+  find_key = "steals"
+  return_key = "player_name"
+  return_stat = ""
+  
+  return_stat = find_biggest(find_key, return_key)
+
+  return_stat == player_with_longest_name ? true : false
 end
 
 
