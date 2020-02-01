@@ -120,6 +120,9 @@ def find_team_data(input)
 end
 
 def find_biggest (find_key, return_key)
+  find_key.to_sym
+  return_key.to_sym
+  
   return_stat = 0
   compared = 0
   teams = []
