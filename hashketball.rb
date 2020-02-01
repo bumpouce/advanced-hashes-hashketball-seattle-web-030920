@@ -116,9 +116,9 @@ def find_team_data(input)
 end
 
 def find_biggest (find_key, return_key)
-  return_stat = 0
-  compared = 0
-  teams = []
+#  return_stat = 0
+#  compared = 0
+#  teams = []
   
 #  names = team_names 
 #  teams << find_team_data(names[0])
@@ -133,5 +133,5 @@ def find_biggest (find_key, return_key)
 #    end
 #  end
   
-  return_stat
+#  return_stat
 end
