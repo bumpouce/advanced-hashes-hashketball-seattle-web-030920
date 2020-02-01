@@ -69,8 +69,8 @@ def player_stats (player)
 end
 
 def big_shoe_rebounds ()
-  find_key = :shoe
-  return_key = :rebounds
+  find_key = "shoe"
+  return_key = "rebounds"
   return_stat = 0
   
   return_stat = find_biggest (find_key, return_key)
