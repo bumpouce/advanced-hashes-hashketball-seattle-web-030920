@@ -78,7 +78,7 @@ end
 
 def most_points_scored ()
   find_key = "points"
-  return_key = "rebounds"
+  return_key = "player_name"
   return_stat = 0
   
   return_stat = find_biggest(find_key, return_key)
