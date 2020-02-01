@@ -69,6 +69,9 @@ def player_stats (player)
 end
 
 def big_shoe_rebounds ()
+  find_key = :shoe
+  return_key = :rebounds
+  
   return_stat = 0
   compared = 0
   teams = []
@@ -77,12 +80,9 @@ def big_shoe_rebounds ()
   teams << find_team_data(names[0])
   teams << find_team_data(names[1])
 
-  pp "Teams: #{names[0]} and #{names[1]}"
-
   teams.collect do |team|
     team[:players].collect do |player|
-      pp "Player: #{player[:player_name]}"
-      if player[:shoe] > compared
+      if player[find_key] > compared
         pp "Found a bigger shoe!"
         compared = player[:shoe]
         return_stat = player[:rebounds]
