@@ -104,6 +104,20 @@ def winning_team ()
 end
 
 def player_with_longest_name ()
+  name_length = 0
+  
+  teams = team_names
+
+  player_names(home).collect do |player|
+    home_score += num_points_scored (player)
+  end
+  
+  player_names(away).collect do |player|
+    away_score += num_points_scored (player)
+  end
+  
+  home_score > away_score ? home : away
+
 end
 
 def long_name_steals_a_ton? ()
