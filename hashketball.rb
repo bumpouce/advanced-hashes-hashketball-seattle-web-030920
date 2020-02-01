@@ -108,7 +108,7 @@ def player_with_longest_name ()
   home = teams[0]
   away = teams[1]
   
-  all_players = player_names(home) + player_names
+  all_players = player_names(home) + player_names(away)
   pp "All players: #{all_players}"
   all_players.collect do |player|
     pp "Players name is #{player[:player_name]} characters long."
