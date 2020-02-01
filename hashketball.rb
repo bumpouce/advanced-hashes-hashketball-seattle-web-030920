@@ -124,14 +124,14 @@ def find_biggest (find_key, return_key)
   teams << find_team_data(names[0])
   teams << find_team_data(names[1])
   
-  teams.collect do |team|
-    team[:players].collect do |player|
-      if player[find_key] > compared
-        compared = player[find_key]
-        return_stat = player[return_key]
-      end
-    end
-  end
+#  teams.collect do |team|
+#    team[:players].collect do |player|
+#      if player[find_key] > compared
+#        compared = player[find_key]
+#        return_stat = player[return_key]
+#      end
+#    end
+#  end
   
   return_stat
 end
