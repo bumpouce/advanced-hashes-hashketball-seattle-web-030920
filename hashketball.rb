@@ -120,9 +120,9 @@ def find_biggest (find_key, return_key)
   compared = 0
   teams = []
   
-  names = team_names 
-  teams << find_team_data(names[0])
-  teams << find_team_data(names[1])
+#  names = team_names 
+#  teams << find_team_data(names[0])
+#  teams << find_team_data(names[1])
   
 #  teams.collect do |team|
 #    team[:players].collect do |player|
