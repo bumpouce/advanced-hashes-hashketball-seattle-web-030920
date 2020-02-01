@@ -75,9 +75,12 @@ def big_shoe_rebounds ()
   compared = 0
   teams = []
   
-#  names = team_names 
-#  teams << find_team_data(names[0])
-#  teams << find_team_data(names[1])
+  names = team_names 
+  teams << find_team_data(names[0])
+  teams << find_team_data(names[1])
+
+  pp "Teams: #{names[0]} and #{names[1]}"
+  pp "Data: #{teams}"
   
 #  teams.collect do |team|
 #    team[:players].collect do |player|
