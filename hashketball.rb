@@ -89,6 +89,9 @@ def winning_team ()
   away_score = 0
   
   teams = team_names
+  home = teams[0]
+  away = teams[1]
+  
   player_names(teams[0]).collect do |player|
     home_score += num_points_scored (player)
   end
@@ -97,7 +100,7 @@ def winning_team ()
     away_score += num_points_scored (player)
   end
   
-  home_score > away_score ? home_score : away_score
+  home_score > away_score ? home : away
 end
 
 def player_with_longest_name ()
