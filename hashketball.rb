@@ -104,6 +104,7 @@ def player_with_longest_name ()
   all_players = []
   
   teams = team_names
+  pp "Teams: #{teams}" 
   home = teams[0]
   away = teams[1]
   
