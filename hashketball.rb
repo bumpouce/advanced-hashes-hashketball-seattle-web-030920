@@ -73,7 +73,7 @@ def big_shoe_rebounds ()
   return_key = "rebounds"
   return_stat = 0
   
-  return_stat = find_biggest ()
+  return_stat = find_biggest
   
 end
 
