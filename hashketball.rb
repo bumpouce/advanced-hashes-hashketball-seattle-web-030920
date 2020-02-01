@@ -97,7 +97,7 @@ def winning_team ()
     away_score += num_points_scored (player)
   end
   
-  
+  home_score > away_score ? home_score : away_score
 end
 
 def player_with_longest_name ()
