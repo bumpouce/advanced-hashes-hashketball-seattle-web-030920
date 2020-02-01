@@ -84,8 +84,8 @@ def big_shoe_rebounds ()
     team[:players].collect do |player|
       if player[find_key] > compared
         pp "Found a bigger shoe!"
-        compared = player[:shoe]
-        return_stat = player[:rebounds]
+        compared = player[find_key]
+        return_stat = player[return_key]
       end
     end
   end
