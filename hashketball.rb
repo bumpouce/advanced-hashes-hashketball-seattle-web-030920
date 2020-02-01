@@ -80,16 +80,17 @@ def big_shoe_rebounds ()
   teams << find_team_data(names[1])
 
   pp "Teams: #{names[0]} and #{names[1]}"
-  pp "Data: #{teams}"
-  
-#  teams.collect do |team|
+
+  teams.collect do |team|
+    pp "Team: #{team}"
+
 #    team[:players].collect do |player|
 #      if player[find_key] > compared
 #        compared = player[find_key]
 #        return_stat = player[return_key]
 #      end
 #    end
-#  end
+  end
   
 #  return_stat
 end
