@@ -133,9 +133,9 @@ def find_biggest (find_key, return_key)
 
   teams.collect do |team|
     team[:players].collect do |player|
-      if player[:shoe] > compared
-        compared = player[:shoe]
-        return_stat = player[:rebounds]
+      if player[find_key] > compared
+        compared = player[find_key]
+        return_stat = player[return_key]
       end
     end
   end
