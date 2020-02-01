@@ -85,6 +85,12 @@ def most_points_scored ()
 end
 
 def winning_team ()
+  
+  teams = team_names
+  pp "Players for home: #{player_names(teams[0])}" 
+  pp "Players for away: #{player_names(teams[1])}" 
+  
+  
 end
 
 def player_with_longest_name ()
@@ -145,4 +151,13 @@ def find_biggest (find_key, return_key)
   end
   
   return_stat
+end
+
+def player_names (team)
+  name_list = []
+  
+  team = find_team_data(team)
+  team[:players].collect {|player| name_list << player[:player_name]}
+    
+  name_list
 end
