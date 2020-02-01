@@ -77,7 +77,7 @@ def big_shoe_rebounds ()
 end
 
 def most_points_scored ()
-  find_key = "shoe"
+  find_key = "points"
   return_key = "rebounds"
   return_stat = 0
   
