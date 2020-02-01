@@ -71,9 +71,9 @@ end
 def big_shoe_rebounds ()
   rebounds = 0 
 
-#  return_stat = 0
-#  compared = 0
-#  teams = []
+  return_stat = 0
+  compared = 0
+  teams = []
   
 #  names = team_names 
 #  teams << find_team_data(names[0])
