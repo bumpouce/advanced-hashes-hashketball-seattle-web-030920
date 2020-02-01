@@ -74,12 +74,13 @@ def big_shoe_rebounds ()
   return_stat = 0
   
   return_stat = find_biggest(find_key, return_key)
-  
 end
 
 def most_points_scored ()
+  find_key = "points"
+  return_key = "points"
   
-  #find_biggest (find_key, return_key)
+  find_biggest (find_key, return_key)
 end
 
 def winning_team ()
