@@ -126,8 +126,7 @@ end
 def find_biggest (find_key, return_key)
   f = find_key.to_sym
   r = return_key.to_sym
-  pp "Find key: #{f}; return key: #{r}"
-  
+
   return_stat = 0
   compared = 0
   teams = []
@@ -138,7 +137,6 @@ def find_biggest (find_key, return_key)
 
   teams.collect do |team|
     team[:players].collect do |player|
-      pp "Find key: #{player[f]}; return key: #{player[r]}"
       if player[f] > compared
         compared = player[f]
         return_stat = player[r]
