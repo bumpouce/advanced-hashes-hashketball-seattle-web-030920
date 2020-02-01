@@ -73,9 +73,6 @@ def big_shoe_rebounds ()
   compared = 0
   teams = []
   
-  find_key = ":shoe"
-  return_key = ":rebounds"
-  
   names = team_names 
   teams << find_team_data(names[0])
   teams << find_team_data(names[1])
