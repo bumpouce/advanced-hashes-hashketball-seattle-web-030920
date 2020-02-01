@@ -86,7 +86,7 @@ def big_shoe_rebounds ()
 
   teams.collect do |team|
     team[:players].collect do |player|
-      pp "Player: #{player}"
+      pp "Player: #{player[:player_name]}"
       if player[find_key] > compared
 #        compared = player[find_key]
 #        return_stat = player[return_key]
