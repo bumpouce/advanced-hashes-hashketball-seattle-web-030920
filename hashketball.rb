@@ -111,8 +111,8 @@ def player_with_longest_name ()
   home = teams[0]
   away = teams[1]
   
-  all_players = player_names(home) 
-  all_players << player_names(away)
+  player_names(home) 
+  player_names(away)
   
   pp "There are #{all_players.length} players combined."
 end
