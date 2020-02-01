@@ -105,22 +105,16 @@ end
 
 def player_with_longest_name ()
   name_length = 0
+  all_players = []
   
   teams = team_names
-  teams.flatten!
+  home = teams[0]
+  away = teams[1]
   
-  pp teams
+  all_players = player_names(home) 
+  all_players << player_names(away)
   
-#  player_names(home).collect do |player|
-#    home_score += num_points_scored (player)
-#  end
-  
-#  player_names(away).collect do |player|
-#    away_score += num_points_scored (player)
-#  end
-  
-#  home_score > away_score ? home : away
-
+  pp "There are #{all_players.length} players combined."
 end
 
 def long_name_steals_a_ton? ()
