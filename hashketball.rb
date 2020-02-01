@@ -85,12 +85,17 @@ def most_points_scored ()
 end
 
 def winning_team ()
+  home_score = 0 
+  away_score = 0
   
   teams = team_names
-  player_names(teams[0]).collect do |score|
+  player_names(teams[0]).collect do |player|
+    home_score += num_points_scored (player)
   end
   
-  player_names(teams[1])
+  player_names(teams[1]).collect do |player|
+    away_score += num_points_scored (player)
+  end
   
   
 end
