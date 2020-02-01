@@ -92,19 +92,15 @@ def winning_team ()
   home = teams[0]
   away = teams[1]
   
-  player_names(home).collect do |player|
-    home_score += num_points_scored (player)
-  end
-  
-  player_names(away).collect do |player|
-    away_score += num_points_scored (player)
-  end
+  player_names(home).collect { |player| home_score += num_points_scored (player)}
+  player_names(away).collect { |player| away_score += num_points_scored (player)}
   
   home_score > away_score ? home : away
 end
 
 def player_with_longest_name ()
   name_length = 0
+  long_name_player = ""
   all_players = []
   
   teams = team_names
@@ -112,8 +108,13 @@ def player_with_longest_name ()
   away = teams[1]
   
   all_players = player_names(home) + player_names(away)
+  all_players.collect do |player|
+    if player[:player_name].length > name_length
+      name_length = player[:player_name].length
+      long_name_player = player[:player_name]
+  end
   
-  pp "There are #{all_players.length} players combined."
+  long_name_player
 end
 
 def long_name_steals_a_ton? ()
