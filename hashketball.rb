@@ -87,8 +87,10 @@ end
 def winning_team ()
   
   teams = team_names
-  pp "Players for home: #{player_names(teams[0])}" 
-  pp "Players for away: #{player_names(teams[1])}" 
+  player_names(teams[0]).collect do |score|
+  end
+  
+  player_names(teams[1])
   
   
 end
